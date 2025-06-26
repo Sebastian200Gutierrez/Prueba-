@@ -50,3 +50,8 @@ def analizar_numeros(numeros: Numeros):
         "menor": menor,
         "promedio": round(promedio, 2)
     }
+
+# 👇 Esto es necesario para Railway
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=8000)
